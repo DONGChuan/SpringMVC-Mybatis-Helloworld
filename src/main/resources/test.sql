@@ -2,13 +2,11 @@ create database `test` ;
 
 use test;
 
-CREATE TABLE hello (
+CREATE TABLE tb_user (
 	id INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(30) NOT NULL
 );
 
-INSERT INTO hello (name) VALUES ("DONG");
-INSERT INTO hello (name) VALUES ("CHUAN");
-INSERT INTO hello (name) VALUES ("DOUBI");
-
-select * from hello;
+INSERT INTO tb_user (name) VALUES ("DONG");
+INSERT INTO tb_user (name) VALUES ("CHUAN");
+INSERT INTO tb_user (name) VALUES ("DOUBI");
