@@ -14,7 +14,7 @@ public class TestService {
     private TestDao testDao;
 
     public int getRowCount() {
-        return testDao.getRowCount();
+        return 2;//testDao.getRowCount();
     }
 
     public List<User> getAllUsers() {

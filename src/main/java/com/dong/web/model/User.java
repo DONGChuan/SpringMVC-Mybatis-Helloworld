@@ -1,5 +1,8 @@
 package com.dong.web.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class User {
 
     private String name;

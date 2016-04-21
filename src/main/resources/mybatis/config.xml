@@ -7,7 +7,7 @@
 	</settings>
 
 	<typeAliases>
-		<typeAlias type="User" alias="com.dong.web.model.User"/>
+		<typeAlias type="com.dong.web.model.User" alias="User"/>
 	</typeAliases>
 
 </configuration>
