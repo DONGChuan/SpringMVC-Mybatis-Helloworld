@@ -10,6 +10,7 @@ import java.util.List;
 @Service
 public class UserService {
 
+    // IDE could mention here `Could not autowired`. Because MapperScannerConfigurer have not create MapperFactoryBean yet.
     @Resource
     private UserMapper userMapper;
 
