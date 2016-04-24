@@ -9,7 +9,13 @@
 
 	<!-- If find annotation like @Component @Controller @Service @Repository, register a bean for this class -->
     <context:component-scan base-package="com.dong.*" />
+
+    <!-- declares support for general annotations such as @Required, @Autowired, @PostConstruct, and so on -->
     <context:annotation-config />
+
+    <!-- eclares explicit support for annotation-driven MVC controllers (i.e. @RequestMapping, @Controller, although support for those
+     is the default behaviour), as well as adding support for declrative validation via @Valid and message body marshalling with
+      @RequestBody/ResponseBody -->
     <mvc:annotation-driven />
 
     <!-- When ModelAndView mv = new ModelAndView("index"). it will find WEB-INF/page/index.jsp -->
