@@ -1,6 +1,6 @@
 package com.dong.web.service;
 
-import com.dong.web.dao.UserDao;
+import com.dong.web.mapper.UserMapper;
 import com.dong.web.model.User;
 import org.springframework.stereotype.Service;
 
@@ -11,14 +11,14 @@ import java.util.List;
 public class UserService {
 
     @Resource
-    private UserDao userDao;
+    private UserMapper userMapper;
 
     public int getRowCount() {
-        return userDao.getRowCount();
+        return userMapper.getRowCount();
     }
 
     public List<User> getAllUsers() {
-        return userDao.getAllUsers();
+        return userMapper.getAllUsers();
     }
 
 }

@@ -1,4 +1,4 @@
-package com.dong.web.dao;
+package com.dong.web.mapper;
 
 import com.dong.web.model.User;
 import org.springframework.stereotype.Repository;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface UserDao {
+public interface UserMapper {
 
     int getRowCount();
 

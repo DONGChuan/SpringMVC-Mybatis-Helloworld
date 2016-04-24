@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<!-- namespace must indicate DAO interface -->
-<mapper namespace="com.dong.web.dao.UserDao">
+<!-- namespace must indicate mapper interface full package path -->
+<mapper namespace="com.dong.web.mapper.UserMapper">
 
 	<select id="getRowCount" resultType="int">
 		select count(*) from tb_user
