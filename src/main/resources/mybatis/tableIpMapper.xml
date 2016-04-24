@@ -7,8 +7,4 @@
 		select count(*) from tb_user
 	</select>
 
-	<select id="getAllUsers" resultType="User">
-		select * from tb_user
-	</select>
-
 </mapper> 
